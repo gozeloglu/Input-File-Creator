@@ -1,7 +1,12 @@
+"""
+    *This program creates grid map for Assignment-4
+    *Enter the number of row and column number that you want to create
+"""
+
 import sys
 import random
 
-fp = open("test_case.txt", "w")
+fp = open("gameGrid.txt", "w")
 
 letter_list = ["D","W", "S", "T"]
 math_operation_list = ["|", "-", "+", "/", "\\"]
@@ -75,3 +80,5 @@ else:
                     fp.write(input_list[i][j])
                     if counter != column:
                         fp.write(" ")
+
+fp.close()
