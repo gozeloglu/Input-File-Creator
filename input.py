@@ -9,9 +9,9 @@ import random
 
 file = open("test_case.txt", "w")
 
-n = int(input("Kaç tane koordinat istiyorsun? "))
-row = int(input("Satır sayısını giriniz: "))
-column = int(input("Sütun sayısını giriniz: "))
+n = int(input("How many coordinates do you want? "))
+row = int(input("Rown number: "))
+column = int(input("Column number: "))
 
 for i in range(n):
     file.write(str(random.randint(0,row-1)))
@@ -21,6 +21,6 @@ for i in range(n):
 
 file.write("E\n")
 
-file.write(input("İsmi giriniz: "))
+file.write(input("Enter your name: "))
 
 file.close()
